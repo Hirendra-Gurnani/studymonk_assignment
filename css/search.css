@@ -1,0 +1,19 @@
+.candidates-list li {
+  margin-bottom: 5px;
+}
+
+.candidates-list li .badge {
+  margin-left: 5px;
+}
+
+select {
+  border: 1px solid #0c4567 !important;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 20px !important;
+}
+
+.butn-placement {
+  border: 1px solid #0c4567 !important;
+  margin-top: 31px !important;
+}

@@ -1,0 +1,79 @@
+.scrolling-container {
+  position: fixed;
+  top: 120px;
+  right: 10px;
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+}
+
+.scrolling-container div div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.scrolling-container div img {
+  width: 50%;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.scrolling-element {
+  position: relative;
+  margin-bottom: 10px;
+  animation: scroll-animation 5s linear infinite;
+  text-align: center;
+}
+
+.scrolling-container:hover .scrolling-element {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-145%);
+  }
+}
+
+.butn-color{
+    color: #0c4567 !important;
+}
+
+.nav-item > .active {
+  background-color: #0c4567 !important;
+  color: #f3d513 !important;
+}
+
+.nav-item:first-child {
+  margin-right: 10px !important;
+}
+
+.nav-item:not(.active) {
+  border: 1px solid #0c4567 !important;
+  border-radius: 8px;
+}
+.nav-item:not(.active) > .nav-link:hover {
+  background-color: #0c4567 !important;
+  color: #f3d513 !important;
+}
+
+label{
+    color: #0c4567 !important;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+label>hr{
+    margin: 2px 0px 10px 0px;
+    border: 1px solid #0c4567 !important;
+}
+input{
+    border: 1px solid #0c4567 !important;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 20px!important;
+}

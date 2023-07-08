@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+body {
+  background-color: #fef6dd !important;
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#trailing-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999 !important;
+  transform: scale(1);
+  transition: transform 0.5s ease-out, background-color 0.5s ease-out;
+}
+
+#trailing-dot.hovered {
+  transform: scale(5);
+  background-color: rgba(0, 0, 0, 0.577);
+}
+
+#typing-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 70px;
+}
+
+#typing-text {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 50px;
+  font-weight: 600;
+  animation: typing-animation 2s steps(40, end) infinite;
+}
+
+@keyframes typing-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 100px;
+}
+.header-container img {
+  mix-blend-mode: multiply;
+}
+.descrip p {
+  width: 700px;
+  font-size: 20px;
+  text-align: justify;
+}
+.card {
+  background-color: transparent !important;
+  border: none !important;
+  padding-top: 20px;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+}
+.scanning-line {
+  position: absolute;
+  width: 60%;
+  height: 5px;
+  margin-left: 20%;
+  background-color: rgb(0, 204, 255);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 20px rgba(146, 218, 242, 0.772);
+  animation: scanning-animation 5s linear infinite;
+}
+@keyframes scanning-animation {
+  0% {
+    top: 0px; /* Start position above the parent wrapper */
+  }
+
+  50% {
+    top: 57%; /* Middle position at the bottom of the parent wrapper */
+  }
+
+  100% {
+    top: 0px; /* End position back to the top of the parent wrapper */
+  }
+}
+.card-text{
+  text-align: justify;
+  font-size: 17px !important;
+}
+
+.card-bg{
+  background-color: #0c4567 !important;
+  color: #f3d513 !important;
+}
+
+.footer {
+  background-color: #0c4567;
+  padding: 20px;
+  text-align: center;
+  height: 200px;
+  color: #fef6dd !important;
+}
+
+/* contact form */
+
+.my-form {
+  color: #305896;
+}
+.my-form .btn-default {
+  background-color: #305896;
+  color: #fff;
+  border-radius: 0;
+}
+.my-form .btn-default:hover {
+  background-color: #4498C6;
+  color: #fff;
+}
+.my-form .form-control {
+  border-radius: 0;
+}
